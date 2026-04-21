@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Meo Meo Bakery</title>
+  <style> 
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff5f5;
+    color: #7a0c15;
+  }
+
+  /* HEADER */
+  header {
+    background-color: #b11226;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+.cart {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cart-count {
+  background: red;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+  /* BANNER */
+  .banner {
+    background: linear-gradient(
+      rgba(177,18,38,0.6),
+      rgba(177,18,38,0.6)
+    ), url("https://images.unsplash.com/photo-1542826438-bd32f43d626f");
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+}
+
+/* KHUNG GIỮA */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* PHẦN GIỚI THIỆU */
+.about{
+    display:flex;
+    gap:40px;
+}
+
+.about-left{
+    width:45%;
+}
+
+.about-left img{
+    width:100%;
+    border-radius:6px;
+}
+
+.about-right{
+    width:55%;
+}
+
+.year{
+    font-size:80px;
+    color:#c00000;
+    font-weight:bold;
+}
+
+.year span{
+    font-size:32px;
+}
+
+.about-right p{
+    line-height:1.8;
+    margin-top:15px;
+}
+
+/* TẦM NHÌN - SỨ MỆNH */
+.vision-mission{
+    display:flex;
+    gap:30px;
+    margin-top:30px;
+}
+
+.circle-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.circle{
+    width:80px;
+    height:80px;
+    background:#c00000;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    text-align:center;
+    font-size:14px;
+}
+
+/* PHẦN 500+ */
+.stats{
+    text-align:center;
+    margin:80px 0 40px;
+}
+
+.stats h1{
+    font-size:70px;
+    color:#c00000;
+    margin:0;
+}
+
+.stats p{
+    max-width:600px;
+    margin:15px auto;
+}
+
+/* DÒNG BÁNH */
+.cake-row{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.cake-row img{
+    width:120px;
+}
+
+/* FOOTER ĐỎ */  
+.footer{
+    background:#b30000;
+    color:white;
+    padding:40px 20px;
+    margin-top:60px;
+}
+
+.footer-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer-content div{
+    width:30%;
+    font-size:14px;
+}
+
+.footer h4{
+    margin-bottom:10px;
+}
+
+.footer-icons{
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+}
+
+.footer-icons div{
+    width:22%;
+    font-size:14px;
+} 
+</style>
+</head>
+
+<body>
+<header> 
+    <nav>
+      <a href="trangchu.html">Trang chủ</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="lienhe.html">Liên hệ</a>
+    </nav>
+    <div class="cart">
+    🛒 <span id="cart-count">0</span>
+    </div>
+</header> 
+    <!-- GIỚI THIỆU -->
+    <div class="about">
+        <div class="about-left">
+            <img src="https://cdn-images.vtv.vn/66349b6076cb4dee98746cf1/2024/06/08/anh-4-85475592997418999770502.png" alt="Giới thiệu tiệm bánh">
+        </div>
+
+        <div class="about-right">
+            <div class="year">15<span>+</span> <br><span>Năm Hoạt Động</span></div>
+
+            <p>
+                Meo Meo Bakery là thương hiệu bánh ngọt được thành lập với mong muốn
+                mang đến những sản phẩm tinh tế, chất lượng và đậm chất thủ công.
+                Trải qua nhiều năm phát triển, chúng tôi luôn giữ trọn hương vị
+                truyền thống kết hợp cùng sự sáng tạo hiện đại.
+            </p>
+
+            <div class="vision-mission">
+                <div class="circle-box">
+                    <div class="circle">Tầm<br>Nhìn</div>
+                    <p>Trở thành thương hiệu bánh được yêu thích và tin dùng.</p>
+                </div>
+
+                <div class="circle-box">
+                    <div class="circle">Sứ<br>Mệnh</div>
+                    <p>Mang đến niềm vui ngọt ngào trong từng chiếc bánh.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 500+ -->
+    <div class="stats">
+        <h1>500<span>+</span></h1>
+        <p>
+            Với hơn 500 loại bánh đa dạng từ bánh kem, bánh ngọt, bánh truyền thống
+            đến các dòng bánh hiện đại, Meo Meo Bakery đáp ứng mọi nhu cầu của khách hàng.
+        </p>
+    </div>
+
+    <!-- HÌNH BÁNH -->
+    <div class="cake-row">
+        <img src="https://aztraining.vn/wp-content/uploads/2023/02/banh-macarons-min.jpg">
+        <img src="https://dinhnghia.com.vn/wp-content/uploads/2022/09/khai-niem-ve-banh-tiramisu.jpg">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
+        <img src="https://lovebread.com.vn/UserFile/editor/images/TinTuc/banh-ngot-noi-tien-1.jpeg">
+        <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f">
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="footer-icons">
+        <div>🎂<br>Thành phần tươi</div>
+        <div>🍰<br>Thủ công mỗi ngày</div>
+        <div>🛒<br>Giá hợp lý</div>
+        <div>🎁<br>Phù hợp quà tặng</div>
+    </div>
+</div>
+<!-- FOOTER -->
+<div class="footer">
+    <div class="footer-content">
+        <div>
+            <h4>Meo Meo Bakery</h4>
+            <p>Tiệm bánh ngọt chất lượng cao</p>
+            <p>📍 Gia Lai</p>
+        </div>
+
+        <div>
+            <h4>Liên hệ</h4>
+            <p>☎ 0123 456 789</p>
+            <p>✉ MeoMeoBakery@gmail.com</p>
+        </div>
+
+        <div>
+            <h4>Kết nối</h4>
+            <p>Facebook • Instagram • Zalo</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+ 

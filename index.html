@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Meo Meo Bakery</title>
+  <style> 
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff5f5;
+    color: #7a0c15;
+  }
+
+  /* HEADER */
+  header {
+    background-color: #b11226;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+.cart {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cart-count {
+  background: red;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+  /* BANNER */
+  .banner {
+    background: linear-gradient(
+      rgba(177,18,38,0.6),
+      rgba(177,18,38,0.6)
+    ), url("https://images.unsplash.com/photo-1542826438-bd32f43d626f");
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+
+  /* SECTION */
+  section {
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #b11226;
+  }
+
+  /* PRODUCTS */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+  }
+
+  .product {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(177,18,38,0.2);
+    padding: 20px;
+  }
+
+  .product img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .product h3 {
+    margin: 15px 0 5px;
+    color: #8b0f1a;
+  }
+
+  /* FOOTER */
+.footer{
+    background:#b30000;
+    color:white;
+    padding:40px 20px;
+    margin-top:60px;
+}
+
+.footer-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer-content div{
+    width:30%;
+    font-size:14px;
+}
+
+.footer h4{
+    margin-bottom:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header> 
+    <nav>
+      <a href="trangchu.html">Trang chủ</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="lienhe.html">Liên hệ</a>
+    </nav>
+    <div class="cart">
+    🛒 <span id="cart-count">0</span>
+    </div>
+</header>
+  <!-- BANNER -->
+  <div class="banner">
+    <div>
+      <h1>Meo Meo Bakery</h1>
+      <p>Bánh ngọt thủ công – Ấm áp như cái ôm của mèo 🐾</p>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section>
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
+        <h3>Bánh kem mèo béo</h3>
+        <p>Ngọt dịu – Trang trí dễ thương</p>
+      </div>
+
+      <div class="product">
+        <img src="https://dongphuongyphap.net/wp-content/uploads/2024/04/banh-mi-bo-sua-bao-nhieu-calo-2.jpg">
+        <h3>Bánh mì bơ sữa</h3>
+        <p>Mềm – thơm – chuẩn vị tiệm bánh</p>
+      </div>
+
+      <div class="product">
+        <img src="https://andros-vietnam.com/wp-content/uploads/banh-ngot-phap-5.jpg">
+        <h3>Bánh ngọt Pháp</h3> 
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<div class="footer">
+    <div class="footer-content">
+        <div>
+            <h4>Meo Meo Bakery</h4>
+            <p>Tiệm bánh ngọt chất lượng cao</p>
+            <p>📍 Gia Lai</p>
+        </div>
+
+        <div>
+            <h4>Liên hệ</h4>
+            <p>☎ 0123 456 789</p>
+            <p>✉ MeoMeoBakery@gmail.com</p>
+        </div>
+
+        <div>
+            <h4>Kết nối</h4>
+            <p>Facebook • Instagram • Zalo</p>
+        </div>
+    </div>
+</div>
+ 
+</body>
+</html>
+ 

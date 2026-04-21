@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Meo Meo Bakery</title>
+  <style> 
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff5f5;
+    color: #7a0c15;
+  }
+
+  /* HEADER */
+  header {
+    background-color: #b11226;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+.cart {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cart-count {
+  background: red;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+  /* BANNER */
+  .banner {
+    background: linear-gradient(
+      rgba(177,18,38,0.6),
+      rgba(177,18,38,0.6)
+    ), url("https://images.unsplash.com/photo-1542826438-bd32f43d626f");
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+}
+
+/* KHUNG GIỮA */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+/* TIÊU ĐỀ */
+.page-title{
+    color:#b30000;
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.breadcrumb{
+    font-size:14px;
+    color:#777;
+    margin-bottom:30px;
+}
+
+/* GRID SẢN PHẨM */
+.product-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:25px;
+}
+
+.product-box{
+    background:#fff;
+    border-radius:12px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.product-box:hover{
+    transform:translateY(-5px);
+}
+
+.product-box img{
+    width:100%;
+    height:180px;
+    object-fit:contain;
+}
+
+.product-box h4{
+    margin:10px 0 5px;
+}
+
+.product-box p{
+    font-size:14px;
+    color:#777;
+}
+
+/* FOOTER */
+.footer{
+    background:#b30000;
+    color:white;
+    padding:40px 20px;
+    margin-top:60px;
+}
+
+.footer-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer-content div{
+    width:30%;
+    font-size:14px;
+}
+
+.footer h4{
+    margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+<header> 
+    <nav>
+      <a href="trangchu.html">Trang chủ</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="lienhe.html">Liên hệ</a>
+    </nav>
+    <div class="cart">
+    🛒 <span id="cart-count">0</span>
+    </div> 
+</header>
+    <!-- GRID -->
+    <div class="product-grid">
+
+        <div class="product-box">
+            <img src="https://www.traviet.com/wp-content/uploads/2025/10/gio-qua-tet-300K-2-e1761710392438.jpg">
+            <h4>Quà Tết 2026</h4>
+            <p>7 sản phẩm</p>
+        </div>
+
+        <div class="product-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDjfmL055Q7Oa-LOPIfkmO9co2k1nPIreVrA&s">
+            <h4>New Collection</h4>
+            <p>15 sản phẩm</p>
+        </div>
+
+        <div class="product-box">
+            <img src="https://cdn-media.sforum.vn/storage/app/media/Van%20Pham/5/5f/anh-banh-sinh-nhat-7.jpg">
+            <h4>Bánh Kem</h4>
+            <p>227 sản phẩm</p>
+        </div>
+
+        <div class="product-box">
+            <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/cheesecake_thumb_9c0ee56991.jpg">
+            <h4>Cheese Cake</h4>
+            <p>56 sản phẩm</p>
+        </div>
+
+        <div class="product-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS95JddtHttWXuqQFgsicMAxyTBDf9QHbQfg&s">
+            <h4>Rau Câu</h4>
+            <p>63 sản phẩm</p>
+        </div>
+
+        <div class="product-box">
+            <img src="https://2hstudio.vn/mau-banh-cuoi-dep-sang-trong/mau-banh-cuoi-dep/">
+            <h4>Bánh Cưới</h4>
+            <p>23 sản phẩm</p>
+        </div>
+
+        <div class="product-box">
+            <img src="https://thietbidungcubuffet.com/images/tin-tuc/tiec-tra-teabreak-8.jpg">
+            <h4>Tea Break</h4>
+            <p>43 sản phẩm</p>
+        </div>
+ 
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="footer-content">
+        <div>
+            <h4>Meo Meo Bakery</h4>
+            <p>Tiệm bánh ngọt chất lượng cao</p>
+            <p>📍 Gia Lai</p>
+        </div>
+
+        <div>
+            <h4>Liên hệ</h4>
+            <p>☎ 0123 456 789</p>
+            <p>✉ MeoMeoBakery@gmail.com</p>
+        </div>
+
+        <div>
+            <h4>Kết nối</h4>
+            <p>Facebook • Instagram • Zalo</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

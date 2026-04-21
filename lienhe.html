@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Meo Meo Bakery</title>
+  <style> 
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff5f5;
+    color: #7a0c15;
+  }
+
+  /* HEADER */
+  header {
+    background-color: #b11226;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+.cart {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cart-count {
+  background: red;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+  /* BANNER */
+  .banner {
+    background: linear-gradient(
+      rgba(177,18,38,0.6),
+      rgba(177,18,38,0.6)
+    ), url("https://images.unsplash.com/photo-1542826438-bd32f43d626f");
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+header{
+    background:#d62828;
+    padding:15px;
+    color:white;
+}
+nav a{
+    margin:0 10px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+section{
+    padding:20px;
+}
+.contact-box{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    max-width:500px;
+}
+label{
+    display:block;
+    margin-top:10px;
+}
+input, textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    background:#d62828;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+/* FOOTER */
+.footer{
+    background:#b30000;
+    color:white;
+    padding:40px 20px;
+    margin-top:60px;
+}
+
+.footer-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer-content div{
+    width:30%;
+    font-size:14px;
+}
+
+.footer h4{
+    margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1>🍰 Meo Meo Bakery</h1>
+    <nav>
+
+      <a href="trangchu.html">Trang chủ</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="lienhe.html">Liên hệ</a>
+    </nav>
+    <div class="cart">
+    🛒 <span id="cart-count">0</span>
+    </div>
+</header> 
+<section>
+<h2>Liên hệ với chúng tôi</h2>
+<div class="contact-box">
+<label>Họ và tên</label>
+<input type="text" placeholder="Nhập họ tên">
+
+<label>Email</label>
+<input type="email" placeholder="Nhập email">
+
+<label>Nội dung</label>
+<textarea rows="4" placeholder="Nhập nội dung liên hệ"></textarea>
+
+<button>Gửi liên hệ</button> 
+ 
+<!-- FOOTER -->
+<div class="footer">
+    <div class="footer-content">
+        <div>
+            <h4>Meo Meo Bakery</h4>
+            <p>Tiệm bánh ngọt chất lượng cao</p>
+            <p>📍 Gia Lai</p>
+        </div>
+
+        <div>
+            <h4>Liên hệ</h4>
+            <p>☎ 0123 456 789</p>
+            <p>✉ MeoMeoBakery@gmail.com</p>
+        </div>
+
+        <div>
+            <h4>Kết nối</h4>
+            <p>Facebook • Instagram • Zalo</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
